@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 import javax.ws.rs.ApplicationPath;
 
-@ApplicationPath("/")
+@ApplicationPath("/api")
 @Component
 public class JerseyConfig extends ResourceConfig {
 
