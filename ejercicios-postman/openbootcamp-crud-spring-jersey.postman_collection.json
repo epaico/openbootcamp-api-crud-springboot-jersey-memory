@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "ff427da1-6fc7-40c1-9cd4-a61f39768c25",
+		"name": "openbootcamp-crud-spring-jersey",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11485262"
+	},
+	"item": [
+		{
+			"name": "add-persona",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"jerson\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/personas",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"personas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-personas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/personas",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"personas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
