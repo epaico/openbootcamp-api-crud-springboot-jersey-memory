@@ -34,6 +34,7 @@ public class PersonaControllers {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response addPersona(Persona persona){
+        //TODO Pendiente la verificacion si existe Persona
         personaService.add(persona);
         return Response.created(URI.create("/personas/" + persona.getNombre()))
                 .build();
